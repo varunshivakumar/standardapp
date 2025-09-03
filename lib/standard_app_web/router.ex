@@ -17,7 +17,8 @@ defmodule StandardAppWeb.Router do
   scope "/", StandardAppWeb do
     pipe_through :browser
 
-    get "/", PageController, :home
+    get "/", PageController, :home, layout: {StandardAppWeb.Layouts, :root}
+    get "/about", PageController, :about
   end
 
   # Other scopes may use custom stacks.

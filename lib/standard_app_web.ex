@@ -38,7 +38,9 @@ defmodule StandardAppWeb do
 
   def controller do
     quote do
-      use Phoenix.Controller, formats: [:html, :json]
+      use Phoenix.Controller,
+        formats: [:html, :json],
+        layouts: [html: {StandardAppWeb.Layouts, :app_static}]
 
       use Gettext, backend: StandardAppWeb.Gettext
 
@@ -50,7 +52,8 @@ defmodule StandardAppWeb do
 
   def live_view do
     quote do
-      use Phoenix.LiveView
+      use Phoenix.LiveView,
+        layout: {StandardAppWeb.Layouts, :app}
 
       unquote(html_helpers())
     end
@@ -67,6 +70,7 @@ defmodule StandardAppWeb do
   def html do
     quote do
       use Phoenix.Component
+      import StandardAppWeb.CoreComponents
 
       # Import convenience functions from controllers
       import Phoenix.Controller,
