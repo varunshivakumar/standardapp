@@ -1,31 +1,266 @@
 <div class="prose prose-lg max-w-none">
-  <h1>About StandardApp</h1>
-  
-  <p class="text-lg text-base-content/70">
-    Welcome to StandardApp, a Phoenix Framework application built with modern web technologies.
-  </p>
+  <div class="max-w-4xl mx-auto px-6 py-8">
+    <h1 class="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+      About StandardApp
+    </h1>
+    
+    <p class="text-xl text-base-content/70 mb-12 text-center max-w-3xl mx-auto leading-relaxed">
+      Welcome to StandardApp, a Phoenix Framework application built with modern web technologies.
+    </p>
 
-  <h2>Features</h2>
-  <ul>
-    <li>Built with Phoenix Framework</li>
-    <li>Modern UI with Tailwind CSS</li>
-    <li>Responsive design</li>
-    <li>Theme switching support</li>
-  </ul>
+    <!-- Alert Components -->
+    <div class="max-w-4xl mx-auto mb-16">
+      <div class="alert alert-info mb-6 shadow-lg">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="stroke-current shrink-0 w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+        </svg>
+        <span class="text-lg">This page showcases various components to test theme switching functionality.</span>
+      </div>
 
-  <h2>Technology Stack</h2>
-  <ul>
-    <li><strong>Backend:</strong> Elixir with Phoenix Framework</li>
-    <li><strong>Frontend:</strong> HEEx templates with Tailwind CSS</li>
-    <li><strong>Styling:</strong> DaisyUI components</li>
-    <li><strong>Icons:</strong> Heroicons</li>
-  </ul>
+      <div class="alert alert-warning shadow-lg">
+        <svg xmlns="http://www.w3.org/2000/svg" class="stroke-current shrink-0 h-6 w-6" fill="none" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L3.34 16.5c-.77.833.192 2.5 1.732 2.5z" />
+        </svg>
+        <span class="text-lg">Try switching themes to see how these components adapt!</span>
+      </div>
+    </div>
 
-  <div class="mt-8 p-4 bg-base-200 rounded-lg">
-    <h3>Getting Started</h3>
-    <p>
-      This is a standard Phoenix application that demonstrates common patterns and layouts.
-      You can customize the layouts, add new pages, and extend the functionality as needed.
+    <!-- Button Components -->
+    <section class="max-w-4xl mx-auto mb-20">
+      <h2 class="text-3xl font-bold mb-8 text-center border-b-2 border-primary pb-4">Button Components</h2>
+      <div class="space-y-8">
+        <div class="flex flex-wrap gap-4 justify-center">
+          <button class="btn btn-primary shadow-lg hover:shadow-xl transition-all duration-300">Primary Button</button>
+          <button class="btn btn-secondary shadow-lg hover:shadow-xl transition-all duration-300">Secondary Button</button>
+          <button class="btn btn-accent shadow-lg hover:shadow-xl transition-all duration-300">Accent Button</button>
+          <button class="btn btn-neutral shadow-lg hover:shadow-xl transition-all duration-300">Neutral Button</button>
+          <button class="btn btn-outline shadow-lg hover:shadow-xl transition-all duration-300">Outline Button</button>
+          <button class="btn btn-ghost shadow-lg hover:shadow-xl transition-all duration-300">Ghost Button</button>
+          <button class="btn btn-link shadow-lg hover:shadow-xl transition-all duration-300">Link Button</button>
+        </div>
+        
+        <div class="flex flex-wrap gap-4 justify-center">
+          <button class="btn btn-sm btn-primary shadow-lg hover:shadow-xl transition-all duration-300">Small Primary</button>
+          <button class="btn btn-lg btn-secondary shadow-lg hover:shadow-xl transition-all duration-300">Large Secondary</button>
+          <button class="btn btn-wide btn-accent shadow-lg hover:shadow-xl transition-all duration-300">Wide Accent</button>
+          <button class="btn btn-circle btn-neutral shadow-lg hover:shadow-xl transition-all duration-300">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Card Components -->
+    <section class="max-w-6xl mx-auto mb-20">
+      <h2 class="text-3xl font-bold mb-10 text-center border-b-2 border-secondary pb-4">Card Components</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="card bg-base-100 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+          <figure class="h-48 overflow-hidden">
+            <img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" class="w-full h-full object-cover" />
+          </figure>
+          <div class="card-body">
+            <h3 class="card-title text-xl">Card Title</h3>
+            <p class="text-base-content/70">This is a sample card component to test theme colors.</p>
+            <div class="card-actions justify-end mt-4">
+              <button class="btn btn-primary shadow-lg">Buy Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card bg-base-200 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+          <div class="card-body">
+            <h3 class="card-title text-xl">Another Card</h3>
+            <p class="text-base-content/70">This card uses a different background color variant.</p>
+            <div class="card-actions justify-end mt-4">
+              <button class="btn btn-secondary shadow-lg">Details</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card bg-accent text-accent-content shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+          <div class="card-body">
+            <h3 class="card-title text-xl">Accent Card</h3>
+            <p>This card uses the accent color scheme.</p>
+            <div class="card-actions justify-end mt-4">
+              <button class="btn btn-primary shadow-lg">Action</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Badge Components -->
+    <section class="max-w-4xl mx-auto mb-20">
+      <h2 class="text-3xl font-bold mb-10 text-center border-b-2 border-accent pb-4">Badge Components</h2>
+      <div class="flex flex-wrap gap-4 justify-center">
+        <div class="badge badge-primary badge-lg shadow-md">Primary</div>
+        <div class="badge badge-secondary badge-lg shadow-md">Secondary</div>
+        <div class="badge badge-accent badge-lg shadow-md">Accent</div>
+        <div class="badge badge-neutral badge-lg shadow-md">Neutral</div>
+        <div class="badge badge-outline badge-lg shadow-md">Outline</div>
+        <div class="badge badge-lg shadow-md">Large</div>
+        <div class="badge badge-sm shadow-md">Small</div>
+      </div>
+    </section>
+
+    <!-- Progress Components -->
+    <section class="max-w-2xl mx-auto mb-20">
+      <h2 class="text-3xl font-bold mb-10 text-center border-b-2 border-neutral pb-4">Progress Components</h2>
+      <div class="space-y-6">
+        <div class="space-y-2">
+          <label class="text-sm font-medium">Primary Progress</label>
+          <progress class="progress progress-primary w-full h-4 shadow-lg" value="70" max="100"></progress>
+        </div>
+        <div class="space-y-2">
+          <label class="text-sm font-medium">Secondary Progress</label>
+          <progress class="progress progress-secondary w-full h-4 shadow-lg" value="50" max="100"></progress>
+        </div>
+        <div class="space-y-2">
+          <label class="text-sm font-medium">Accent Progress</label>
+          <progress class="progress progress-accent w-full h-4 shadow-lg" value="90" max="100"></progress>
+        </div>
+      </div>
+    </section>
+
+    <!-- Form Components -->
+    <section class="max-w-2xl mx-auto mb-20">
+      <h2 class="text-3xl font-bold mb-10 text-center border-b-2 border-primary pb-4">Form Components</h2>
+      <div class="space-y-8">
+        <div class="form-control w-full">
+          <label class="label">
+            <span class="label-text text-lg font-medium">Email</span>
+            <span class="label-text-alt">Alt label</span>
+          </label>
+          <input type="text" placeholder="username@site.com" class="input input-bordered w-full shadow-lg focus:shadow-xl transition-all duration-300" />
+          <label class="label">
+            <span class="label-text-alt">Helper text</span>
+          </label>
+        </div>
+
+        <div class="form-control w-full">
+          <label class="label cursor-pointer">
+            <span class="label-text text-lg font-medium">Remember me</span>
+            <input type="checkbox" class="checkbox checkbox-primary scale-125" />
+          </label>
+        </div>
+
+        <div class="form-control w-full">
+          <label class="label">
+            <span class="label-text text-lg font-medium">Pick the best fantasy franchise</span>
+          </label>
+          <select class="select select-bordered w-full shadow-lg focus:shadow-xl transition-all duration-300">
+            <option disabled selected>Pick one</option>
+            <option>Game of Thrones</option>
+            <option>Lord of the Rings</option>
+            <option>Harry Potter</option>
+          </select>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal Trigger -->
+    <section class="max-w-2xl mx-auto mb-20">
+      <h2 class="text-3xl font-bold mb-10 text-center border-b-2 border-secondary pb-4">Modal Component</h2>
+      <div class="text-center">
+        <button class="btn btn-primary btn-lg shadow-lg hover:shadow-xl transition-all duration-300" onclick="my_modal_1.showModal()">Open Modal</button>
+      </div>
+
+      <dialog id="my_modal_1" class="modal">
+        <div class="modal-box max-w-2xl">
+          <h3 class="font-bold text-2xl mb-4">Hello!</h3>
+          <p class="py-4 text-lg">This is a modal dialog to test theme colors.</p>
+          <div class="modal-action">
+            <form method="dialog">
+              <button class="btn btn-primary shadow-lg">Close</button>
+            </form>
+          </div>
+        </div>
+      </dialog>
+    </section>
+
+    <!-- Stats Component -->
+    <section class="max-w-6xl mx-auto mb-20">
+      <h2 class="text-3xl font-bold mb-10 text-center border-b-2 border-accent pb-4">Stats Component</h2>
+      <div class="stats shadow-2xl">
+        <div class="stat">
+          <div class="stat-figure text-primary">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-8 h-8 stroke-current">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+            </svg>
+          </div>
+          <div class="stat-title text-lg">Total Likes</div>
+          <div class="stat-value text-primary text-3xl">25.6K</div>
+          <div class="stat-desc">21% more than last month</div>
+        </div>
+        
+        <div class="stat">
+          <div class="stat-figure text-secondary">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-8 h-8 stroke-current">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+            </svg>
+          </div>
+          <div class="stat-title text-lg">Page Views</div>
+          <div class="stat-value text-secondary text-3xl">2.6M</div>
+          <div class="stat-desc">14% more than last month</div>
+        </div>
+        
+        <div class="stat">
+          <div class="stat-figure text-secondary">
+            <div class="avatar online">
+              <div class="w-16 rounded-full">
+                <img src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+              </div>
+            </div>
+          </div>
+          <div class="stat-value text-3xl">86%</div>
+          <div class="stat-title text-lg">Tasks done</div>
+          <div class="stat-desc text-secondary">31 tasks remaining</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technology Stack Section -->
+    <section class="max-w-4xl mx-auto mb-20">
+      <h2 class="text-3xl font-bold mb-10 text-center border-b-2 border-neutral pb-4">Technology Stack</h2>
+      <div class="bg-base-200 p-8 rounded-xl shadow-xl">
+        <ul class="space-y-4 text-lg">
+          <li class="flex items-center gap-3">
+            <span class="badge badge-primary">Backend</span>
+            <span class="font-medium">Elixir with Phoenix Framework</span>
+          </li>
+          <li class="flex items-center gap-3">
+            <span class="badge badge-secondary">Frontend</span>
+            <span class="font-medium">HEEx templates with Tailwind CSS</span>
+          </li>
+          <li class="flex items-center gap-3">
+            <span class="badge badge-accent">Styling</span>
+            <span class="font-medium">DaisyUI components</span>
+          </li>
+          <li class="flex items-center gap-3">
+            <span class="badge badge-neutral">Icons</span>
+            <span class="font-medium">Heroicons</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="max-w-4xl mx-auto mt-16 p-8 bg-base-200 rounded-xl shadow-xl">
+      <h3 class="text-2xl font-bold mb-6 text-center">Getting Started</h3>
+      <p class="text-lg text-center leading-relaxed">
+        This is a standard Phoenix application that demonstrates common patterns and layouts.
+        You can customize the layouts, add new pages, and extend the functionality as needed.
+      </p>
+    </div>
+
+    <!-- Divider -->
+    <div class="divider my-16">
+      <span class="text-2xl font-bold px-8">Theme Testing Complete</span>
+    </div>
+    
+    <p class="text-center text-base-content/60 mb-12 text-lg max-w-3xl mx-auto">
+      All components above should adapt to theme changes when you switch themes using the theme switcher.
     </p>
   </div>
 </div>

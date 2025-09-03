@@ -147,32 +147,344 @@ defmodule StandardAppWeb.Layouts do
   """
   def theme_toggle(assigns) do
     ~H"""
-    <div class="card relative flex flex-row items-center border-2 border-base-300 bg-base-300 rounded-full">
-      <div class="absolute w-1/3 h-full rounded-full border-1 border-base-200 bg-base-100 brightness-200 left-0 [[data-theme=light]_&]:left-1/3 [[data-theme=dark]_&]:left-2/3 transition-[left]" />
-
-      <button
-        class="flex p-2 cursor-pointer w-1/3"
-        phx-click={JS.dispatch("phx:set-theme")}
-        data-phx-theme="system"
-      >
-        <.icon name="hero-computer-desktop-micro" class="size-4 opacity-75 hover:opacity-100" />
-      </button>
-
-      <button
-        class="flex p-2 cursor-pointer w-1/3"
-        phx-click={JS.dispatch("phx:set-theme")}
-        data-phx-theme="light"
-      >
-        <.icon name="hero-sun-micro" class="size-4 opacity-75 hover:opacity-100" />
-      </button>
-
-      <button
-        class="flex p-2 cursor-pointer w-1/3"
-        phx-click={JS.dispatch("phx:set-theme")}
-        data-phx-theme="dark"
-      >
-        <.icon name="hero-moon-micro" class="size-4 opacity-75 hover:opacity-100" />
-      </button>
+    <div class="dropdown dropdown-end">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+        <.icon name="hero-swatch" class="size-5" />
+      </div>
+      <ul tabindex="0" class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52 max-h-96 overflow-y-auto">
+        <li>
+          <button
+            phx-click={JS.dispatch("phx:set-theme")}
+            data-phx-theme="system"
+            class="flex items-center gap-2"
+          >
+            <.icon name="hero-computer-desktop-micro" class="size-4" />
+            System
+          </button>
+        </li>
+        <li>
+          <button
+            phx-click={JS.dispatch("phx:set-theme")}
+            data-phx-theme="light"
+            class="flex items-center gap-2"
+          >
+            <.icon name="hero-sun-micro" class="size-4" />
+            Light
+          </button>
+        </li>
+        <li>
+          <button
+            phx-click={JS.dispatch("phx:set-theme")}
+            data-phx-theme="dark"
+            class="flex items-center gap-2"
+          >
+            <.icon name="hero-moon-micro" class="size-4" />
+            Dark
+          </button>
+        </li>
+        <li><div class="divider my-1"></div></li>
+        <li>
+          <button
+            phx-click={JS.dispatch("phx:set-theme")}
+            data-phx-theme="corporate"
+            class="flex items-center gap-2"
+          >
+            <div class="w-4 h-4 rounded bg-primary"></div>
+            Corporate
+          </button>
+        </li>
+        <li>
+          <button
+            phx-click={JS.dispatch("phx:set-theme")}
+            data-phx-theme="winter"
+            class="flex items-center gap-2"
+          >
+            <div class="w-4 h-4 rounded bg-blue-500"></div>
+            Winter
+          </button>
+        </li>
+        <li>
+          <button
+            phx-click={JS.dispatch("phx:set-theme")}
+            data-phx-theme="business"
+            class="flex items-center gap-2"
+          >
+            <div class="w-4 h-4 rounded bg-gray-700"></div>
+            Business
+          </button>
+        </li>
+        <li>
+          <button
+            phx-click={JS.dispatch("phx:set-theme")}
+            data-phx-theme="dracula"
+            class="flex items-center gap-2"
+          >
+            <div class="w-4 h-4 rounded bg-purple-600"></div>
+            Dracula
+          </button>
+        </li>
+        <li><div class="divider my-1"></div></li>
+        <li>
+          <button
+            phx-click={JS.dispatch("phx:set-theme")}
+            data-phx-theme="cupcake"
+            class="flex items-center gap-2"
+          >
+            <div class="w-4 h-4 rounded bg-pink-300"></div>
+            Cupcake
+          </button>
+        </li>
+        <li>
+          <button
+            phx-click={JS.dispatch("phx:set-theme")}
+            data-phx-theme="cyberpunk"
+            class="flex items-center gap-2"
+          >
+            <div class="w-4 h-4 rounded bg-yellow-400"></div>
+            Cyberpunk
+          </button>
+        </li>
+        <li>
+          <button
+            phx-click={JS.dispatch("phx:set-theme")}
+            data-phx-theme="synthwave"
+            class="flex items-center gap-2"
+          >
+            <div class="w-4 h-4 rounded bg-purple-500"></div>
+            Synthwave
+          </button>
+        </li>
+        <li>
+          <button
+            phx-click={JS.dispatch("phx:set-theme")}
+            data-phx-theme="retro"
+            class="flex items-center gap-2"
+          >
+            <div class="w-4 h-4 rounded bg-orange-400"></div>
+            Retro
+          </button>
+        </li>
+        <li>
+          <button
+            phx-click={JS.dispatch("phx:set-theme")}
+            data-phx-theme="halloween"
+            class="flex items-center gap-2"
+          >
+            <div class="w-4 h-4 rounded bg-orange-600"></div>
+            Halloween
+          </button>
+        </li>
+        <li>
+          <button
+            phx-click={JS.dispatch("phx:set-theme")}
+            data-phx-theme="garden"
+            class="flex items-center gap-2"
+          >
+            <div class="w-4 h-4 rounded bg-green-500"></div>
+            Garden
+          </button>
+        </li>
+        <li>
+          <button
+            phx-click={JS.dispatch("phx:set-theme")}
+            data-phx-theme="forest"
+            class="flex items-center gap-2"
+          >
+            <div class="w-4 h-4 rounded bg-green-700"></div>
+            Forest
+          </button>
+        </li>
+        <li>
+          <button
+            phx-click={JS.dispatch("phx:set-theme")}
+            data-phx-theme="aqua"
+            class="flex items-center gap-2"
+          >
+            <div class="w-4 h-4 rounded bg-cyan-500"></div>
+            Aqua
+          </button>
+        </li>
+        <li>
+          <button
+            phx-click={JS.dispatch("phx:set-theme")}
+            data-phx-theme="lofi"
+            class="flex items-center gap-2"
+          >
+            <div class="w-4 h-4 rounded bg-gray-300"></div>
+            Lo-Fi
+          </button>
+        </li>
+        <li>
+          <button
+            phx-click={JS.dispatch("phx:set-theme")}
+            data-phx-theme="pastel"
+            class="flex items-center gap-2"
+          >
+            <div class="w-4 h-4 rounded bg-pink-200"></div>
+            Pastel
+          </button>
+        </li>
+        <li>
+          <button
+            phx-click={JS.dispatch("phx:set-theme")}
+            data-phx-theme="fantasy"
+            class="flex items-center gap-2"
+          >
+            <div class="w-4 h-4 rounded bg-purple-300"></div>
+            Fantasy
+          </button>
+        </li>
+        <li>
+          <button
+            phx-click={JS.dispatch("phx:set-theme")}
+            data-phx-theme="wireframe"
+            class="flex items-center gap-2"
+          >
+            <div class="w-4 h-4 rounded bg-gray-500"></div>
+            Wireframe
+          </button>
+        </li>
+        <li>
+          <button
+            phx-click={JS.dispatch("phx:set-theme")}
+            data-phx-theme="black"
+            class="flex items-center gap-2"
+          >
+            <div class="w-4 h-4 rounded bg-black"></div>
+            Black
+          </button>
+        </li>
+        <li>
+          <button
+            phx-click={JS.dispatch("phx:set-theme")}
+            data-phx-theme="luxury"
+            class="flex items-center gap-2"
+          >
+            <div class="w-4 h-4 rounded bg-yellow-600"></div>
+            Luxury
+          </button>
+        </li>
+        <li>
+          <button
+            phx-click={JS.dispatch("phx:set-theme")}
+            data-phx-theme="cmyk"
+            class="flex items-center gap-2"
+          >
+            <div class="w-4 h-4 rounded bg-blue-600"></div>
+            CMYK
+          </button>
+        </li>
+        <li>
+          <button
+            phx-click={JS.dispatch("phx:set-theme")}
+            data-phx-theme="autumn"
+            class="flex items-center gap-2"
+          >
+            <div class="w-4 h-4 rounded bg-orange-500"></div>
+            Autumn
+          </button>
+        </li>
+        <li>
+          <button
+            phx-click={JS.dispatch("phx:set-theme")}
+            data-phx-theme="acid"
+            class="flex items-center gap-2"
+          >
+            <div class="w-4 h-4 rounded bg-green-400"></div>
+            Acid
+          </button>
+        </li>
+        <li>
+          <button
+            phx-click={JS.dispatch("phx:set-theme")}
+            data-phx-theme="lemonade"
+            class="flex items-center gap-2"
+          >
+            <div class="w-4 h-4 rounded bg-yellow-300"></div>
+            Lemonade
+          </button>
+        </li>
+        <li>
+          <button
+            phx-click={JS.dispatch("phx:set-theme")}
+            data-phx-theme="night"
+            class="flex items-center gap-2"
+          >
+            <div class="w-4 h-4 rounded bg-blue-800"></div>
+            Night
+          </button>
+        </li>
+        <li>
+          <button
+            phx-click={JS.dispatch("phx:set-theme")}
+            data-phx-theme="coffee"
+            class="flex items-center gap-2"
+          >
+            <div class="w-4 h-4 rounded bg-brown-600"></div>
+            Coffee
+          </button>
+        </li>
+        <li>
+          <button
+            phx-click={JS.dispatch("phx:set-theme")}
+            data-phx-theme="dim"
+            class="flex items-center gap-2"
+          >
+            <div class="w-4 h-4 rounded bg-gray-600"></div>
+            Dim
+          </button>
+        </li>
+        <li>
+          <button
+            phx-click={JS.dispatch("phx:set-theme")}
+            data-phx-theme="nord"
+            class="flex items-center gap-2"
+          >
+            <div class="w-4 h-4 rounded bg-blue-400"></div>
+            Nord
+          </button>
+        </li>
+        <li>
+          <button
+            phx-click={JS.dispatch("phx:set-theme")}
+            data-phx-theme="sunset"
+            class="flex items-center gap-2"
+          >
+            <div class="w-4 h-4 rounded bg-red-500"></div>
+            Sunset
+          </button>
+        </li>
+        <li>
+          <button
+            phx-click={JS.dispatch("phx:set-theme")}
+            data-phx-theme="caramellatte"
+            class="flex items-center gap-2"
+          >
+            <div class="w-4 h-4 rounded bg-amber-400"></div>
+            Caramel Latte
+          </button>
+        </li>
+        <li>
+          <button
+            phx-click={JS.dispatch("phx:set-theme")}
+            data-phx-theme="abyss"
+            class="flex items-center gap-2"
+          >
+            <div class="w-4 h-4 rounded bg-blue-900"></div>
+            Abyss
+          </button>
+        </li>
+        <li>
+          <button
+            phx-click={JS.dispatch("phx:set-theme")}
+            data-phx-theme="silk"
+            class="flex items-center gap-2"
+          >
+            <div class="w-4 h-4 rounded bg-gray-200"></div>
+            Silk
+          </button>
+        </li>
+      </ul>
     </div>
     """
   end
