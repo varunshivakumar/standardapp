@@ -146,7 +146,7 @@ defmodule StandardAppWeb.Layouts do
   See <head> in root.html.heex which applies the theme before page load.
   """
   def theme_toggle(assigns) do
-    assigns = assign(assigns, :themes, StandardApp.Splash.get_themes())
+    assigns = assign(assigns, :themes, StandardApp.Splash.get_theme_sections())
 
     ~H"""
     <div class="dropdown dropdown-end">
@@ -154,24 +154,38 @@ defmodule StandardAppWeb.Layouts do
         <.icon name="hero-swatch" class="size-5" />
       </div>
       <ul tabindex="0" class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-156 max-h-96 overflow-y-auto">
-        <%= for theme <- @themes do %>
-          <%= if theme.name == "corporate" do %>
-            <li><div class="divider my-1"></div></li>
-          <% end %>
-          <li>
-            <button
-              phx-click={JS.dispatch("phx:set-theme")}
-              data-phx-theme={theme.name}
-              class="flex items-center gap-2"
-            >
-              <.icon name={theme.icon} class="size-4" />
-              <div class={"w-4 h-4 rounded #{theme.color}"}></div>
-              <%= String.capitalize(theme.name) %>
-            </button>
-          </li>
+        <li><div class="divider my-1">SYSTEM</div></li>
+        <%= for theme <- @themes.default do %>
+          <.theme_toggle_list_item theme={theme} />
+        <% end %>
+        <li><div class="divider my-1">LIGHT</div></li>
+        <%= for theme <- @themes.light do %>
+          <.theme_toggle_list_item theme={theme} />
+        <% end %>
+        <li><div class="divider my-1">DARK</div></li>
+        <%= for theme <- @themes.dark do %>
+          <.theme_toggle_list_item theme={theme} />
         <% end %>
       </ul>
     </div>
+    """
+  end
+
+  attr :theme, :map, required: true
+
+  def theme_toggle_list_item(assigns) do
+    ~H"""
+    <li>
+      <button
+        phx-click={JS.dispatch("phx:set-theme")}
+        data-phx-theme={@theme.name}
+        class="flex items-center gap-2"
+      >
+        <.icon name={@theme.icon} class="size-4" />
+        <div class={"w-4 h-4 rounded #{@theme.color}"}></div>
+        <%= String.capitalize(@theme.name) %>
+      </button>
+    </li>
     """
   end
 end
