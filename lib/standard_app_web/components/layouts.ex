@@ -181,8 +181,7 @@ defmodule StandardAppWeb.Layouts do
         data-phx-theme={@theme.name}
         class="flex items-center gap-2"
       >
-        <.icon name={@theme.icon} class="size-4" />
-        <div class={"w-4 h-4 rounded #{@theme.color}"}></div>
+        <.icon name={@theme.icon} class={"size-4 #{@theme.color}"} />
         <%= String.capitalize(@theme.name) %>
       </button>
     </li>
