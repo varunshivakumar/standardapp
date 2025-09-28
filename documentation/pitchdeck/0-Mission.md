@@ -15,5 +15,3 @@ The reason for this is
 * \<INSERT MORE\>
 
 The solution is to create a benchmark/standard (an opinionated and tailored list) of achievable milestones (that are scientifically proven, data-driven and verifiable) in each fundamental pillar of life (physical, mental, emotional, spiritual, financial) that all men can aspire towards.
-
-The missions
