@@ -1,30 +1,23 @@
 
+# Standard App - Team
 
-| `STANDARD APP` | `PITCHDECK` | `COMPANY` |
-| :---- | :---: | ----: |
-
-# **`TEAM`**
-
-- # `MEMBERS`
+## Members
 
 List who is working on the project
 
-| `ROLE` | `NAME` |
+| Role | Name |
 | :---- | :---- |
-| `FOUNDERS` | `[varunshkumar@gmail.com](mailto:varunshkumar@gmail.com)`   Hafeez Baoku Joseph Hines |
-| `ADVISORS` | `Person` |
-| `CONTRIBUTORS` | `Person` |
-| `INFORMED` | `Person` |
+| Founders | [varunshkumar@gmail.com](mailto:varunshkumar@gmail.com), Hafeez Baoku, Joseph Hines |
+| Advisors | Person |
+| Contributors | Person |
 
-#### 
-
-- # `TIMELINE`
+## Timeline
 
 *How long have each of you been working on this? How much of that has been full-time? Please explain.*
 
 Started development in October 2025
 
-- # `LOCATION`
+## Location
 
 *Where do you live now, and where would the company be based after YC? Explain your decision regarding location.*
 

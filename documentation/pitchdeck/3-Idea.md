@@ -1,11 +1,7 @@
 
+# Standard App - Idea
 
-| `STANDARD APP` | `PITCHDECK` | `COMPANY` |
-| :---- | :---: | ----: |
-
-# **`IDEA`**
-
-- # `WHY`
+## Why
 
 *Why did you pick this idea to work on? Do you have domain expertise in this area? How do you know people need what you're making?*
 
@@ -13,7 +9,7 @@ I’m building a product that I can pass onto my future children, my family and 
 
 I’ve partnered with the founders of another organization- Hafeez Baoku and Joseph Hines who have built a 300+ person community of like-minded men that are all committed to holistic excellence. Hafeez Baoku is a prominent podcast host, content creator, and speaker, best known as the cofounder and face of The Roommates Podcast. At its peak, The Roommatest Podcast was one of the most popular in the men's self-improvement space. His work centers on helping men grow in all areas—spiritual, emotional, physical, and financial—through honest conversations, mentorship, and personal storytelling.
 
-- # `COMPETITORS`
+## Competitors
 
 *Who are your competitors? What do you understand about your business that they don't?*
 
@@ -36,7 +32,7 @@ The Affluent Standard provides \#3
 
 The Standard App and The Affluent Standard have a symbiotic partnership that allows both companies to focus on a specific part of the problem while a competitor would have to do both simultaneously.
 
-- # `MONETIZATION`
+## Monetization
 
 *How do or will you make money? How much could you make?*
 
@@ -45,7 +41,7 @@ Free version will store data in cookies and act as a funnel and lead magnet for 
 Premium allows for database saves and customization  
 Affluent Standard members get a social network
 
-- # `CATEGORY`
+## Category
 
 *Which category best applies to your company?*
 

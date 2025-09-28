@@ -1,14 +1,7 @@
 
+# Standard App - Mission
 
-| `STANDARD APP` | `PITCHDECK` | `OVERVIEW` |
-| :---- | :---: | ----: |
-
-# **`PITCHDECK`**
-
-| `TIMING Sep 26, 2025  to Dec 31, 2025 STATUS IN PROGRESS OWNERS [Varun Shivakumar](mailto:varun@softcloudllc.com)` |  `TABLE OF CONTENTS`  [`ABOUT US`]() `PROJECT DETAILS TRACKING RESOURCES FAQs` |
-| :---- | :---- |
-
-- # `MISSION`
+## Mission
 
 An increasing number of 20-something men in the current generation are less fulfilled, less coupled and more purposeless than ever before. 
 
@@ -23,6 +16,4 @@ The reason for this is
 
 The solution is to create a benchmark/standard (an opinionated and tailored list) of achievable milestones (that are scientifically proven, data-driven and verifiable) in each fundamental pillar of life (physical, mental, emotional, spiritual, financial) that all men can aspire towards.
 
-- # `NOTE`
-
-Many of the questions that are currently in this pitch deck came straight from the YCombinator application  
+The missions

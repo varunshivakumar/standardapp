@@ -1,11 +1,7 @@
 
+# Standard App - Features
 
-| `STANDARD APP` | `PITCHDECK` | `FEATURES` |
-| :---- | :---: | ----: |
-
-# **`FEATURES`**
-
-- # `MILESTONES (CORE)`
+## Milestones (Core)
 
 Database Schema Tables
 
@@ -25,7 +21,7 @@ Database Schema Tables
 * UserMetric- many-to-many
 
 
-## **Physical Pillar**
+## Physical Pillar
 
 * Grooming  
   * Barber- You have a barber that you meet on a consistent basis (at least once a month)  
@@ -51,19 +47,19 @@ Database Schema Tables
   * Martial Arts Skill Level  
     * \[SELECT\] competent, skilled, expert
 
-- # `LEVELS (Priority)`
+## Levels (Priority)
 
 The purpose of this feature is to ensure that “habit” related milestones are getting done every month
 
 Any habit related milestones
 
-- # `MONTHLY CHECK-IN (Priority)`
+## Monthly Check-in (Priority)
 
 The purpose of this feature is to ensure that “habit” related milestones are getting done every month
 
 Any habit related milestones
 
-- # `RANKINGS (Priority)`
+## Rankings (Priority)
 
 The purpose of this feature is to create visibility to how a user compares to other users in all aspects of their life. 
 
@@ -73,32 +69,30 @@ Rankings will be created based on the following from ascending priority
 2. Percentage of level complete  
 3. Individual stat ranking (future)
 
-- # `ADMIN DASHBOARD (Priority)`
+## Admin Dashboard (Priority)
 
 The purpose of this feature is for admin users and liaisons to see a list of users, create users, and see what they’re usage is
 
-- # `AVATAR (not priority culture feature)`
+## Avatar (Not Priority Culture Feature)
 
 The purpose of this feature is to create a breakdown of a milestone into smaller achievable goals
 
-- # `CUSTOMIZATION (not priority)`
+## Customization (Not Priority)
 
 The purpose of this feature is to create a breakdown of a milestone into smaller achievable goals
 
-- # `SMART GOALS (not priority)`
+## Smart Goals (Not Priority)
 
 The purpose of this feature is to create a breakdown of a milestone into smaller achievable goals
 
-## 
-
-- # `ROUTINE TRACKER (not priority)`
+## Routine Tracker (Not Priority)
 
 The purpose of this feature is to create a breakdown of a milestone into smaller achievable goals
 
-- # `EVENTS (not priority)`
+## Events (Not Priority)
 
 The purpose of this feature is to create a breakdown of a milestone into smaller achievable goals
 
-- # `MESSAGING (not priority)`
+## Messaging (Not Priority)
 
 The purpose of this feature is to create a breakdown of a milestone into smaller achievable goals  

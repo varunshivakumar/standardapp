@@ -1,11 +1,13 @@
 
+# Standard App - Problem Statement
 
-| `STANDARD APP` | `PITCHDECK` | `PROBLEMS` |
-| :---- | :---: | ----: |
+## Problem
 
-# **`PROBLEMS`**
+An increasing number of 20-something men in the current generation are less fulfilled, less coupled and more purposeless than ever before. 
 
-- # `ABSTRACT`
+## Evidence
+
+* Evidence and statistics of young men suffering
 
 People in the modern age feel purposeless, isolated and hopeless.
 
@@ -13,29 +15,17 @@ After graduating from academia, there’s no structured path for 20 and 30 somet
 
 The challenge for most men that want to be well-rounded is that even if you progress in one area of life, usually another area stagnates or atrophies. People end up in self-limiting stereotypical extremes. I.e., the software engineer that can’t work with others, the gym rat who feels purposeless, the teacher that lives paycheck to paycheck, or the parent that’s so overwhelmed that they have no energy to workout. And once they get stuck, they don’t have the stimulus, knowledge or community to help them move past their plateaus.
 
-- # `ROOT CAUSE`
+## Root Cause
+
+The reason for this is
+
+* Lack of role models  
+* Lack of third spaces  
+* Gender bias  
+* \<INSERT MORE\>
+
+## Societal Effect
 
 \<INSERT\>
 
-- # `SOCIETAL AFFECT`
-
-\<INSERT\>
-
-## **OPEN TO FEEDBACK**
-
-We share first drafts and rough work and are open to perspectives from other team members
-
-## **COLLABORATIVE AND INCLUSIVE**
-
-We dedicate time to collaborating to generate creative solutions where every team member has a voice
-
-## **ALWAYS LEARNING**
-
-We seek out new skills, share new knowledge with teammates, and support others who are learning
-
-## **ADAPTIVE AND AGILE**
-
-We embrace change and maintain agility in order to shift with evolving circumstances
-
-#### 
 

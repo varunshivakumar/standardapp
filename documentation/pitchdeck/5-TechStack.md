@@ -1,11 +1,7 @@
 
+# Standard App - Tech Stack
 
-| `STANDARD APP` | `PITCHDECK` | `TECH STACK` |
-| :---- | :---: | ----: |
-
-# **`TECH STACK`**
-
-- # `STACK`
+## Stack
 
 *What tech stack are you using, or planning to use, to build this product? Include AI models and AI coding tools you use.*
 

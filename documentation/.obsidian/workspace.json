@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "pitchdeck/1-Problem.md",
+                "file": "pitchdeck/0-Mission.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "1-Problem"
+              "title": "0-Mission"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "pitchdeck/1-Problem.md",
+                "file": "pitchdeck/0-Mission.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 1-Problem"
+              "title": "Backlinks for 0-Mission"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "pitchdeck/1-Problem.md",
+                "file": "pitchdeck/0-Mission.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from 1-Problem"
+              "title": "Outgoing links from 0-Mission"
             }
           },
           {
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "pitchdeck/1-Problem.md",
+                "file": "pitchdeck/0-Mission.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 1-Problem"
+              "title": "Outline of 0-Mission"
             }
           }
         ]
@@ -171,9 +171,13 @@
   },
   "active": "72ff2f6c3e73dd07",
   "lastOpenFiles": [
+    "pitchdeck/1-Problem.md",
+    "pitchdeck/0-Mission.md",
+    "pitchdeck/3-Idea.md",
+    "pitchdeck/4-Team.md",
+    "pitchdeck/2-Solution.md",
     "features/Features.md",
     "pitchdeck/6-FAQ.md",
-    "pitchdeck/3-Idea.md",
     "Overview.md",
     "Progress.md"
   ]

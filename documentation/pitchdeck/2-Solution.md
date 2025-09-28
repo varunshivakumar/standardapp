@@ -1,17 +1,17 @@
 
+# Standard App - Solution
 
-| `STANDARD APP` | `PITCHDECK` | `COMPANY` |
-| :---- | :---: | ----: |
-
-# **`SOLUTION`**
-
-- # `SHORT DESCRIPTION`
+## Short Description
 
 *Describe what your company does in 50 characters or less.*
 
 opinionated, holistic list of milestones for men
 
-- # `PRODUCT EXPLANATION`
+## Solution
+
+The solution is to create a benchmark/standard (an opinionated and tailored list) of achievable milestones (that are scientifically proven, data-driven and verifiable) in each fundamental pillar of life (physical, mental, emotional, spiritual, financial) that all men can aspire towards.
+
+## Product Explanation
 
 *What is your company going to make? Please describe your product and what it does or will do*
 
