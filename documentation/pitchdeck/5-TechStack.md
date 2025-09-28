@@ -1,5 +1,6 @@
 **Last updated:** September 28, 2025
 
+
 # Standard App - Tech Stack
 
 ## Stack
